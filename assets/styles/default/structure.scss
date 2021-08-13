@@ -1,0 +1,50 @@
+//grid structure 
+
+$container :1250px;
+
+
+
+
+.container {		
+	padding:0px 15px;
+	@extend %sizing;
+	position:relative;
+	max-width:$container;
+	margin:0px auto;
+	@include desktop {
+		max-width:940px;	
+	}	
+	@include desktop {
+		max-width:100%;
+		padding:0px 25px;	
+	}	
+	@include mobile {
+		padding:0px 24px;
+	}	
+}
+
+
+.grid {
+	font-size:0px;
+	@extend %sizing;
+	&:after {
+	    display: table;
+	    clear: both;
+	    content: '';
+	}
+
+	&__child {	
+		@extend %inline;
+		max-width:50%;
+		width:100%;
+		&:first-of-type {
+			text-align:left;
+			+ div {
+				text-align:center;
+			}
+		}
+		@include mobile {
+			max-width:100%;
+		}
+	}
+}

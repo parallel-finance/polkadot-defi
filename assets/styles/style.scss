@@ -1,0 +1,30 @@
+
+//defaults sass components
+@import 'default/reset.scss';
+@import 'default/mixins.scss';
+
+//General misc
+@import 'default/responsive.scss';
+@import 'default/structure.scss';
+@import 'default/fonts.scss';
+
+//General stuffs
+@import 'website/general.scss';
+@import 'website/btns.scss';
+
+
+
+//main template
+@import 'website/header.scss';
+@import 'website/footer.scss';
+@import 'website/sections.scss';
+@import 'website/featured.scss';
+@import 'website/animations.scss';
+
+
+
+
+//main sections
+//@import 'sections.scss';
+
+

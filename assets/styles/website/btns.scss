@@ -1,0 +1,38 @@
+
+
+.btn {
+  display:inline-block;
+  font-weight:500;
+  @extend %sizing;
+  padding:12px 40px;
+  @include radius(32px);
+
+  &.solid {
+    background:$blue;
+    color:#fff;
+    border:1px solid $blue;
+    &:hover {
+      background:$pink;
+      border-color:$pink;
+    }
+  }
+
+  &.lineal {
+    background:transparent;
+    border:1px solid $blue;
+    color:$blue;
+    margin-left:10px;
+    background:#fff;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    &:hover { 
+      border-color:$pink;
+      background:$pink;
+      color:#fff;
+    }
+  }
+
+ 
+}
+
+

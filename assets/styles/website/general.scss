@@ -1,0 +1,28 @@
+//colors 
+$blue  :#222222;
+$white :#ddd;
+$pink  :#f861ac;
+
+body {
+  background:#fff;
+  color:#222;
+}
+
+
+
+svg, main, path, a {
+    will-change: transform;
+}
+
+strong {
+  font-weight:bold;
+}
+
+img {
+  max-width:100%;
+  height:auto;
+}
+
+
+
+
