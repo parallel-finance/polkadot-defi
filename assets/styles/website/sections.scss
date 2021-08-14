@@ -87,6 +87,8 @@ section {
       }
     }
     a {
+      margin-top:15px;
+      margin-left:0px !important;
       @include mobile {
         width:100%;
         text-align:center;
@@ -100,15 +102,23 @@ section {
       text-align:left;
       strong {
         font-size:16px;
+        padding-bottom:12px;
         @include tablet {
           font-size:15px;
         }
         color:#F53D8B;
         text-transform:uppercase;
       }
+      p {
+        &[data-view="desktop"] {
+          small {
+            padding-top:10px;
+          }
+        }
+      }
       h3 {
         font-family: 'Montserrat', sans-serif;
-        padding:12px 0px;
+        padding:0px 0px 12px 0px;
       }
       ul {
         padding:12px 0px;
@@ -197,6 +207,10 @@ section {
       flex: 1 0 32.33%;    
       max-width:33.33%;   
       text-align:center; 
+      img {
+        max-width:200px;
+      }
+
       @include tablet {
         flex: 1 0 49%;
         max-width:50%;
