@@ -378,7 +378,7 @@ header > div .social .btn {
 }
 
 body {
-  background: url("../images/gral/bg.png") center center repeat;
+  background: #F8F8F8;
 }
 
 section {
@@ -389,6 +389,9 @@ section {
   section {
     padding: 30px 0px;
   }
+}
+section h2 {
+  margin-bottom: 50px;
 }
 
 .main {
@@ -589,18 +592,18 @@ section {
 
 .community__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
 }
 .community__list__box {
-  margin: 40px 0px;
+  margin: 25px 0px;
   flex: 1 0 32.33%;
   max-width: 33.33%;
   text-align: center;
 }
 .community__list__box img {
-  max-width: 200px;
+  max-width: 165px;
 }
 @media only screen and (max-width: 980px) {
   .community__list__box {
@@ -615,6 +618,9 @@ section {
   }
 }
 
+.newsletter {
+  background: url(../../assets/images/gral/bg.svg) no-repeat center bottom 210%;
+}
 .newsletter__box {
   padding: 50px;
   margin: 50px auto;
