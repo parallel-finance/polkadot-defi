@@ -34,7 +34,7 @@ section {
         text-align:center;
         max-width:100%;
         img {
-          max-width:60%;
+          max-width:90%;
         }
       }
     }
@@ -45,7 +45,7 @@ section {
     width:inherit;
   }
   h1 {
-    padding:50px 0px;
+    padding:0px 0px;
     @include mobile {
       text-align:left;
     }
@@ -56,7 +56,19 @@ section {
     }
   }
   p {
-    padding:25px 0px;
+    padding:15px 0px;
+    @include mobile {
+      text-align:left;
+    }
+
+      small {
+        color:#949c94;
+        font-size:70%;
+        @include mobile {
+          font-size:85%;
+        }
+      }
+
   }
 }
 
@@ -208,8 +220,17 @@ section {
       flex: 1 0 32.33%;    
       max-width:33.33%;   
       text-align:center; 
+      a {
+        position:relative;
+        display:block;
+        width:100%;
+        height:70px;
+      }
       img {
+        position:absolute;
         max-width:165px;
+        max-height:50px;
+        @extend %centerXY;
       }
 
       @include tablet {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@900&display=swap');
 
-$main     : 60px;
+$main     : 50px;
 $title  	: 60px;
 $subtitle : 32px;
 $h4				: 24px;
@@ -31,6 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;	
   font-size:$p;
 }
+
 
 br {
 	@include tablet {
