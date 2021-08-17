@@ -283,35 +283,15 @@
 				</div>
 			</div>
 		</section>
-
-		<script type="text/javascript">
+		
+		<script>
 			var links=document.querySelectorAll(".scroller");for(const link of links){link.addEventListener("click",clickHandler)}
-			function clickHandler(e){e.preventDefault();const href=this.getAttribute("href");const offsetTop=document.querySelector(href).offsetTop;scroll({top:offsetTop,behavior:"smooth"})}
-		</script>
+			function clickHandler(e){e.preventDefault();const href=this.getAttribute("href");const offsetTop=document.querySelector(href).offsetTop;scroll({top:offsetTop,behavior:"smooth"})}			
 
-		<script>
-			if ('loading' in HTMLImageElement.prototype) {
-			 const images = document.querySelectorAll("img.lazyload");
-			  images.forEach(img => {
-			      img.src = img.dataset.src;
-			  });
-			} else {
-			  let script = document.createElement("script");
-			  script.async = true;
-			  script.src = "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js";
-			  document.body.appendChild(script);
-			}
-		</script>		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-0BXJWCPFBT"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
-
-		  gtag('config', 'G-0BXJWCPFBT');
+			if("loading"in HTMLImageElement.prototype){const a=document.querySelectorAll("img.lazyload");a.forEach(e=>{e.src=e.dataset.src})}else{let e=document.createElement("script");e.async=!0,e.src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js",document.body.appendChild(e)}
+			
+			window.addEventListener("load",function(){let a=document.createElement("script");function e(){dataLayer.push(arguments)}a.async=!0,a.src="https://www.googletagmanager.com/gtag/js?id=G-0BXJWCPFBT",document.body.appendChild(a),window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-0BXJWCPFBT")});
 		</script>		
 	
-
 </body>
 </html>
