@@ -139,9 +139,16 @@ section {
         li {
           display:inline-block;
           margin-right:10px;
+          @include mobile {
+            margin-right:5px;
+          }
           img {
             max-width:60px;
             padding:0px;
+            @include mobile {
+              max-width:55px;
+            }            
+            @include radius(50%);
           }
         }
       }
@@ -187,16 +194,12 @@ section {
         margin:0px auto;
         width: 210px;
         height: 210px;
-        @include radius(50%);
         overflow:hidden;
         @include mobile {
           width:150px;
           height:150px;
         }
-        img {
-          width:100%;
-          height:auto;
-        }
+
       }
       &__description {
         padding:25px 0px 0px 0px;

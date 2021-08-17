@@ -550,9 +550,22 @@ section h2 {
   display: inline-block;
   margin-right: 10px;
 }
+@media only screen and (max-width: 767px) {
+  .talks__list__desc ul li {
+    margin-right: 5px;
+  }
+}
 .talks__list__desc ul li img {
   max-width: 60px;
   padding: 0px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 767px) {
+  .talks__list__desc ul li img {
+    max-width: 55px;
+  }
 }
 
 .team__list {
@@ -601,9 +614,6 @@ section h2 {
   margin: 0px auto;
   width: 210px;
   height: 210px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   overflow: hidden;
 }
 @media only screen and (max-width: 767px) {
@@ -611,10 +621,6 @@ section h2 {
     width: 150px;
     height: 150px;
   }
-}
-.team__list .member__image img {
-  width: 100%;
-  height: auto;
 }
 .team__list .member__description {
   padding: 25px 0px 0px 0px;
