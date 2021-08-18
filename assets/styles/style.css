@@ -313,7 +313,7 @@ header > div .logo {
   z-index: 2;
 }
 header > div .logo img {
-  width: 150px;
+  width: 250px;
 }
 header > div .menu li a {
   margin: 0px 20px;
@@ -544,11 +544,31 @@ section h2 {
   padding: 0px 0px 12px 0px;
 }
 .talks__list__desc ul {
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 12px 0px;
+  display: flex;
 }
 .talks__list__desc ul li {
-  display: inline-block;
-  margin-right: 10px;
+  padding: 10px 0px;
+  flex: 1 0 50%;
+  max-width: 50%;
+  display: flex;
+}
+@media only screen and (max-width: 767px) {
+  .talks__list__desc ul li {
+    max-width: 100%;
+    flex: 1 0 100%;
+  }
+}
+.talks__list__desc ul li p {
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.talks__list__desc ul li p small {
+  display: block;
+  font-size: 14px;
 }
 @media only screen and (max-width: 767px) {
   .talks__list__desc ul li {
@@ -557,6 +577,7 @@ section h2 {
 }
 .talks__list__desc ul li img {
   max-width: 60px;
+  height: 60px;
   padding: 0px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -565,6 +586,7 @@ section h2 {
 @media only screen and (max-width: 767px) {
   .talks__list__desc ul li img {
     max-width: 55px;
+    height: 55px;
   }
 }
 

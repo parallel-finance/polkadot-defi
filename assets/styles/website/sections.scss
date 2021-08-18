@@ -135,18 +135,38 @@ section {
         padding:0px 0px 12px 0px;
       }
       ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;        
         padding:12px 0px;
+        display:flex;
         li {
-          display:inline-block;
-          margin-right:10px;
+          padding:10px 0px;
+          flex: 1 0 50%;
+          max-width: 50%; 
+          display:flex;
+          @include mobile {
+            max-width:100%;
+            flex:1 0 100%;
+          }
+          p {
+            padding:10px;
+            box-sizing:border-box;
+            font-size:16px;
+            small {
+              display:block;
+              font-size:14px;
+            }
+          }
           @include mobile {
             margin-right:5px;
           }
           img {
             max-width:60px;
+            height:60px;
             padding:0px;
             @include mobile {
               max-width:55px;
+              height:55px;
             }            
             @include radius(50%);
           }
