@@ -273,6 +273,20 @@ section {
 
 .newsletter {
   background: url(../../assets/images/gral/bg.svg) no-repeat center bottom 210%;  
+  .ty-message {
+    display:none;
+  }
+  form {
+    &.sucess {
+      .suscribe__form {
+        @include opacity(0);
+        display:none;
+      }
+      + .ty-message {
+        display:block;
+      }
+    }
+  }
   &__box {
     padding:50px;
     @extend %sizing;
@@ -299,10 +313,80 @@ section {
       display:block;
       margin:10px 0px;
       @extend %sizing;
-      border:0px;
+      border:2px solid #F3F3F3;
       @include mobile {
         font-size:17px;
       }      
+      &.error {
+        border-color:#fd78b0;
+      }
+    }
+    label {
+      padding:10px 0px;
+      font-size:12px;
+      line-height:1.25;
+      display:flex;
+      align-items:center;
+      text-align:left;
+      .checkbox {
+        position:relative;
+      }
+
+      span {
+        display:block;
+        position:absolute;
+        @extend %centerXY;
+        width:22px;
+        height:22px;
+        background:#F3F3F3;
+        border:2px solid #F3F3F3;
+        @include radius(50%);
+        img {
+          position:absolute;
+          @extend %centerXY;          
+          display:none;
+        }
+      }
+      input {
+        width:0px;
+        height:0px;
+        appearance: none;
+        
+        @include opacity(0);
+        &:checked {
+          + span {
+            img {
+              display:block;
+            }
+          }
+        }
+        &.error {
+          + span {
+            border-color:#fd78b0;
+          }
+        }
+      }      
+      p {
+        font-size:12px !important;
+        padding-left:10px;
+      }
+    }
+    #js-subscribe-response {
+      font-size: 13px;
+      color: #fd78b0;
+      padding-top: 20px;
+      a {
+        font-size:13px;
+        color:#222;
+      }
+    }
+    .ty-message {
+      padding: 50px 0px;
+      border: 1px DASHED #f4f4f4;
+      margin-top: 40px;
+      @include mobile {
+        padding:25px 0px;
+      }
     }
     button {
       font-size:20px;

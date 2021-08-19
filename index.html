@@ -265,20 +265,33 @@
 				<h2 class="black">Join Newsletter</h2>
 				<div class="newsletter__box">
 					<img loading="lazy" class="lazyload" data-src="assets/images/gral/newsletter/logo.svg" alt="Polkadot Defi" width="400" height="50">
-						<form class="suscribe" action="https://parallel.us1.list-manage.com/subscribe/post?u=cb23c198b2c25e04e2a584474&amp;id=4eb99c1f8e" method="post" autocomplete="off">
+						<form id="newsletterform" class="suscribe" action="https://parallel.us1.list-manage.com/subscribe/post?u=cb23c198b2c25e04e2a584474&id=b9bacfd565&c=callback" method="post" autocomplete="off">
 							<div class="suscribe__form">
 								<div id="mce-responses" class="clear">
 									<div class="response" id="mce-error-response" style="display:none"></div>
 									<div class="response" id="mce-success-response" style="display:none"></div>
 								</div> 
-								<input type="#" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
+								<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email address">
+								<label class="checkbox" for="group_1">
+									<div class="checkbox">
+										<input type="checkbox" data-dojo-type="dijit/form/CheckBox" name="group[380442][1]" id="group_1" value="1" class="av-radio">
+										<span><img loading="lazy" class="lazyload" data-src="assets/images/gral/check.svg" width="15" height="15"></span>
+									</div>
+									<p>By signing up, you agree to receive emails about PolkaDeFi events and related marketing.</p>
+								</label>
+								<p id="js-subscribe-response"></p>
 								<button class="btn solid" type="submit" name="subscribe" id="mc-embedded-subscribe">Sign Up</button>
 							</div>
 						</form>		
+						<div class="ty-message">
+							<p>Thank you for subscribing!</p>
+						</div>
 				</div>
 			</div>
 		</section>
-		
+
+
+		<script type="text/javascript" src="assets/js/app.js"></script>
 		<script>
 			var links=document.querySelectorAll(".scroller");for(const link of links){link.addEventListener("click",clickHandler)}
 			function clickHandler(e){e.preventDefault();const href=this.getAttribute("href");const offsetTop=document.querySelector(href).offsetTop;scroll({top:offsetTop,behavior:"smooth"})}			

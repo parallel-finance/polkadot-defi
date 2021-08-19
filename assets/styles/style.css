@@ -70,7 +70,7 @@ table {
   vertical-align: middle;
 }
 
-.community__list__box img {
+.community__list__box img, .newsletter__box label span, .newsletter__box label span img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -690,6 +690,18 @@ section h2 {
 .newsletter {
   background: url(../../assets/images/gral/bg.svg) no-repeat center bottom 210%;
 }
+.newsletter .ty-message {
+  display: none;
+}
+.newsletter form.sucess .suscribe__form {
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  display: none;
+}
+.newsletter form.sucess + .ty-message {
+  display: block;
+}
 .newsletter__box {
   padding: 50px;
   margin: 50px auto;
@@ -719,11 +731,77 @@ section h2 {
   font-size: 20px;
   display: block;
   margin: 10px 0px;
-  border: 0px;
+  border: 2px solid #F3F3F3;
 }
 @media only screen and (max-width: 767px) {
   .newsletter__box input {
     font-size: 17px;
+  }
+}
+.newsletter__box input.error {
+  border-color: #fd78b0;
+}
+.newsletter__box label {
+  padding: 10px 0px;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.newsletter__box label .checkbox {
+  position: relative;
+}
+.newsletter__box label span {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background: #F3F3F3;
+  border: 2px solid #F3F3F3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.newsletter__box label span img {
+  position: absolute;
+  display: none;
+}
+.newsletter__box label input {
+  width: 0px;
+  height: 0px;
+  appearance: none;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+.newsletter__box label input:checked + span img {
+  display: block;
+}
+.newsletter__box label input.error + span {
+  border-color: #fd78b0;
+}
+.newsletter__box label p {
+  font-size: 12px !important;
+  padding-left: 10px;
+}
+.newsletter__box #js-subscribe-response {
+  font-size: 13px;
+  color: #fd78b0;
+  padding-top: 20px;
+}
+.newsletter__box #js-subscribe-response a {
+  font-size: 13px;
+  color: #222;
+}
+.newsletter__box .ty-message {
+  padding: 50px 0px;
+  border: 1px DASHED #f4f4f4;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 767px) {
+  .newsletter__box .ty-message {
+    padding: 25px 0px;
   }
 }
 .newsletter__box button {
