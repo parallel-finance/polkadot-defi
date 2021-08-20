@@ -711,7 +711,7 @@ section h2 {
   box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.05);
 }
 .newsletter__box .suscribe__form {
-  padding-top: 50px;
+  padding-top: 25px;
 }
 @media only screen and (max-width: 767px) {
   .newsletter__box {
@@ -806,7 +806,7 @@ section h2 {
 }
 .newsletter__box button {
   font-size: 20px;
-  margin-top: 25px;
+  margin-top: 0px;
   cursor: pointer;
   display: block;
   width: 100%;

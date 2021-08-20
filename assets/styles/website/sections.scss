@@ -296,7 +296,7 @@ section {
     background: #FFFFFF;
     box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.05);
     .suscribe__form {
-      padding-top:50px;
+      padding-top:25px;
     }
     @include mobile {
       width:100%;
@@ -390,7 +390,7 @@ section {
     }
     button {
       font-size:20px;
-      margin-top:25px;
+      margin-top:0px;
       cursor:pointer;
       display:block;
       width:100%;
