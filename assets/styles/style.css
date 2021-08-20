@@ -526,8 +526,9 @@ section h2 {
   }
 }
 .talks__list__desc strong {
+  display: block;
   font-size: 16px;
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   color: #F53D8B;
   text-transform: uppercase;
 }
@@ -535,13 +536,25 @@ section h2 {
   .talks__list__desc strong {
     font-size: 15px;
   }
+  .talks__list__desc strong + p {
+    color: #7a7a7a;
+  }
+  .talks__list__desc strong + p small {
+    padding-left: 5px;
+  }
 }
 .talks__list__desc p[data-view="desktop"] small {
-  padding-top: 10px;
+  padding-top: 15px;
+  display: block;
 }
 .talks__list__desc h3 {
   font-family: 'Montserrat', sans-serif;
   padding: 0px 0px 12px 0px;
+}
+@media only screen and (max-width: 980px) {
+  .talks__list__desc h3 {
+    padding: 10px 0px 12px 0px;
+  }
 }
 .talks__list__desc ul {
   justify-content: flex-start;
