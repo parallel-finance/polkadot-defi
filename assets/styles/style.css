@@ -537,6 +537,7 @@ section h2 {
     font-size: 15px;
   }
   .talks__list__desc strong + p {
+    font-size: 16px !important;
     color: #7a7a7a;
   }
   .talks__list__desc strong + p small {

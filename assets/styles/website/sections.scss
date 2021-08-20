@@ -121,6 +121,7 @@ section {
         @include tablet {
           font-size:15px;
           + p {
+            font-size:16px !important;
             color:#7a7a7a;
             small {
               padding-left:5px;
