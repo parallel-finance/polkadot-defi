@@ -188,6 +188,70 @@ section {
   }
 }
 
+.agenda-section {
+  h2 + p {
+    color:#7A7A7A;
+    em {
+      color:#F53D8B;
+    }
+  }
+  .agenda {
+    padding:50px 0px;
+    &__item {
+      padding:15px 0px;
+      display:flex;
+      align-items:center;
+      border-bottom:1px solid #eaeaea;
+      &:last-of-type{
+        border-bottom:0px;
+      }
+      @include tablet {
+        display:block;
+        text-align:center;
+      }
+      &__image {
+        @extend %sizing;
+        padding-right:25px;
+        text-align:right;
+        min-width:400px;
+        @include desktop {
+          min-width:298px;
+        }
+        @include tablet {
+          min-width:auto;
+          width:100%;
+          text-align:center;
+          padding-right:0px;
+        }
+        img {
+          @include desktop {
+            width:50px;
+            height:auto;
+          }     
+          @include tablet {
+            width:55px;
+          }
+        }
+      }
+      &__desc {
+        text-align:left;
+        @include tablet {
+          text-align:center;
+        }
+        p {
+          @include desktop {
+            font-size:16px;
+          }
+          @include tablet {
+            padding:5px 0px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
 .team {
   &__list {
     display:flex;
