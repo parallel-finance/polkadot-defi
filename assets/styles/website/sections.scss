@@ -249,7 +249,6 @@ section {
       }
     }
   }
-
 }
 
 .team {
@@ -345,7 +344,6 @@ section {
     }
   }
 }
-
 
 .newsletter {
   background: url(../../assets/images/gral/bg.svg) no-repeat center bottom 210%;  
@@ -473,6 +471,50 @@ section {
       @include mobile {
         font-size:17px;
       }      
+    }
+  }
+}
+
+.future-speakers-list {
+  @include mobile {
+    display:block;
+  }
+  > .griddy {
+    @include mobile {
+      display:block;
+    }
+    img {
+      margin:0px 25px;
+      @include mobile {
+        display:block;
+        margin:-40px auto;
+        transform:rotate(90deg);
+      }
+    }
+  }
+  .speakers__list {
+    padding:15px 0px;
+    @include tablet {
+      flex-wrap: wrap;
+      display:inline;
+    }
+    .speaker {
+      flex:1 1 33.33%;
+      @include tablet {
+        flex:1 1 100%;
+        justify-content:flex-start;
+        padding:10px;
+      }
+      p {
+        padding:0px 10px;
+        font-size:13px;
+        strong {
+          font-family: Montserrat,sans-serif;
+
+          font-size:15px;
+          font-weight:bold;
+        }
+      }
     }
   }
 }
