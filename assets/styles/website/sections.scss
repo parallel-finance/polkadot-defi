@@ -1,5 +1,26 @@
 body {
   background:#F8F8F8;
+  &.featured {
+    header {
+      a {
+        color:#fff;
+        &:hover {
+          color:#e4137b;
+        }
+      }
+    }
+    .logo {
+
+    }
+    header>div .social ul li a {
+      border-color:#fff;
+      svg {
+        path {
+          fill:#fff;
+        }
+      }
+    }
+  }
 }
 
 section {
@@ -15,7 +36,20 @@ section {
   }
 }
 
-
+.background {
+  background:url('../../assets/images/bg.jpg') no-repeat center top;
+  h1,p {
+    color:#fff;
+  }
+  .btn {
+    background:#fff;
+    color:#222;
+    &:hover {
+      background:#e4137b;
+      color:#fff;
+    }
+  }
+}
 .main {
   display:flex;
   align-items:center;

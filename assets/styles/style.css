@@ -409,6 +409,18 @@ header > div .social .btn {
 body {
   background: #F8F8F8;
 }
+body.featured header a {
+  color: #fff;
+}
+body.featured header a:hover {
+  color: #e4137b;
+}
+body.featured header > div .social ul li a {
+  border-color: #fff;
+}
+body.featured header > div .social ul li a svg path {
+  fill: #fff;
+}
 
 section {
   position: relative;
@@ -421,6 +433,21 @@ section {
 }
 section h2 {
   margin-bottom: 50px;
+}
+
+.background {
+  background: url("../../assets/images/bg.jpg") no-repeat center top;
+}
+.background h1, .background p {
+  color: #fff;
+}
+.background .btn {
+  background: #fff;
+  color: #222;
+}
+.background .btn:hover {
+  background: #e4137b;
+  color: #fff;
 }
 
 .main {
